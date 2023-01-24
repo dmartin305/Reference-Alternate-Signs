@@ -18,5 +18,5 @@ for sign in sign_names:
 
 with open("README.md", 'a') as w:
     for i, sign_link in enumerate(sign_links):
-        text = "[" + str(sign_names[i]) + "]" + "(" + sign_link + ")<br>"
+        text = "[" + str(sign_names[i]) + "]" + "(" + sign_link + ")<br> "
         w.write(text)

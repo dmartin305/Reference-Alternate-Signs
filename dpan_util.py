@@ -16,7 +16,7 @@ sign_names.sort()
 for sign in sign_names:
     sign_links.append(sign_savvy_prefix + sign)
 
-with open("signs.md", 'a') as w:
+with open("README.md", 'a') as w:
     for i, sign_link in enumerate(sign_links):
-        text = "[" + str(sign_names[i]) + "]" + "(" + sign_link + ")\n"
+        text = "[" + str(sign_names[i]) + "]" + "(" + sign_link + ")<br>"
         w.write(text)
